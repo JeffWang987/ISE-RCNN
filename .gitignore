@@ -11,5 +11,6 @@ venv/
 *.pkl
 *.bin
 *.pt
+*spconv
 output
 version.py

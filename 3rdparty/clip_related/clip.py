@@ -9,8 +9,8 @@ from PIL import Image
 from torchvision.transforms import Compose, Resize, CenterCrop, ToTensor, Normalize
 from tqdm import tqdm
 
-from model import build_model
-from simple_tokenizer import SimpleTokenizer as _Tokenizer
+from clip_related.model import build_model
+from clip_related.simple_tokenizer import SimpleTokenizer as _Tokenizer
 
 __all__ = ["available_models", "load", "tokenize"]
 _tokenizer = _Tokenizer()
@@ -93,7 +93,7 @@ def load(name: str, device: Union[str, torch.device] = "cuda" if torch.cuda.is_a
         A torchvision transform that converts a PIL image into a tensor that the returned model can take as its input
     """
     if name in _MODELS:
-        model_path = _download(_MODELS[name], root='./clip_related')
+        model_path = _download(_MODELS[name], root='../3rdparty/clip_related')
     elif os.path.isfile(name):
         model_path = name
     else:

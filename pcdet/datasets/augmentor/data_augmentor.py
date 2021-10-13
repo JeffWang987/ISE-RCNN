@@ -3,7 +3,7 @@ import torch
 import numpy as np
 
 from ...utils import common_utils
-from . import augmentor_utils, database_sampler, pts_imgs_db_sampler, pts_imgs_db_sampler_car
+from . import augmentor_utils, database_sampler, pts_imgs_db_sampler
 
 
 class DataAugmentor(object):
