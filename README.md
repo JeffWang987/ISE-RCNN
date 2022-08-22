@@ -1,6 +1,9 @@
 # ISE-RCNN
 ISE-RCNN: Image Semantics Enhancement Network for Robust 3D Object Detection. This repo is based on [OpenPCDet-VoxelRCNN](https://arxiv.org/abs/2012.15712) baseline, you can modify the baseline as you like.
 
+We will not submit the paper to arXiv, because it is written in 2021.9 and may be outdated. However, the paper is uploaded at [here](https://github.com/JeffWang987/ISE-RCNN/blob/main/ISE_RCNN_Image_Semantics_Enhancement_Network_for_Robust_3D_Object_Detection.pdf).
+We hope ISE-RCNN will make some inspirations to the 3D detection community.
+
 # Installation
 Our codes are tested in the following environment:
 - Linux
